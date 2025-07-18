@@ -1,0 +1,27 @@
+{
+  "name": "NamasteReact",
+  "version": "1.0.0",
+  "description": "Learning React Namaste Classes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/satyasaipamarthi/namaste-react-prj.git"
+  },
+  "author": "Satyasai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyasaipamarthi/namaste-react-prj/issues"
+  },
+  "homepage": "https://github.com/satyasaipamarthi/namaste-react-prj#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
