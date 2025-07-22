@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import Header from "./src/Components/Header";
+import AppLayout from "./AppLayout";
 
 // const HeaderElement = React.createElement("div", { className: "title" }, [
 //   React.createElement("h1", { id: "heading1", key: "h1" }, "Heading1"),
@@ -34,4 +36,5 @@ const NestedHeader = ({ tag }) => {
 //   "Welcome to React Classes."
 // );
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<NestedHeader tag={"Hello React World"} />);
+// root.render(<NestedHeader tag={"Hello React World"} />);
+root.render(<AppLayout />);
