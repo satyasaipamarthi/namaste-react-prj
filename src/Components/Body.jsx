@@ -41,7 +41,7 @@ const Body = () => {
               (restaurant) => restaurant.info.avgRating > 4
             );
             console.log(filterData);
-            setListOfRestaurant(filterData);
+            setFilterOfRestaurant(filterData);
           }}
         >
           Top Rated Restaurant
@@ -64,7 +64,7 @@ const Body = () => {
                   .includes(searchText.toLowerCase())
               );
               console.log(filterData);
-              setListOfRestaurant(filterData);
+              setFilterOfRestaurant(filterData);
               // Implement search functionality here
             }}
           >
