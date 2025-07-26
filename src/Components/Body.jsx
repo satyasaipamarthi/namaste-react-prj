@@ -3,6 +3,7 @@ import { resList } from "../utils/Constants.jsx";
 import { useState, useEffect } from "react";
 
 import Shimmer from "./Shimmer.jsx";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   // let resListData = resList;
@@ -74,14 +75,18 @@ const Body = () => {
       </div>
       <div className="restaurant-list">
         {filterOfRestaurant.map((restaurant) => (
-          <RestaurantCard
-            img={restaurant.info.cloudinaryImageId}
-            name={restaurant.info.name}
-            cuisine={restaurant.info.cuisines.join(", ")}
-            avgRating={restaurant.info.avgRating}
-            time={restaurant.info.sla.deliveryTime + " mins"}
+          <Link
+            to={"/restaurant/" + restaurant.info.id}
             key={restaurant.info.id}
-          />
+          >
+            <RestaurantCard
+              img={restaurant.info.cloudinaryImageId}
+              name={restaurant.info.name}
+              cuisine={restaurant.info.cuisines.join(", ")}
+              avgRating={restaurant.info.avgRating}
+              time={restaurant.info.sla.deliveryTime + " mins"}
+            />
+          </Link>
         ))}
       </div>
     </div>
